@@ -1,0 +1,136 @@
+@prefix doap: <http://usefulinc.com/ns/doap#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+
+# LDApp
+<#ldapp> a doap:Project;
+	doap:name "LDApp";
+	doap:homepage <http://ldapp.bergnet.org/>;
+	doap:created "2014";
+	doap:shortdesc "JavaScript Linked Data Stack";
+	doap:description "Just the basic components and a example blog applications.";
+	foaf:logo <img/ldapp-logo.png>;
+	doap:maintainer <https://www.bergnet.org/people/bergi/card#me>;
+	doap:license <http://usefulinc.com/doap/licenses/mit>;
+	doap:repository [ a doap:GitRepository;
+		doap:location <https://github.com/bergos/ldapp.git>;
+		doap:browse <https://github.com/bergos/ldapp>;
+	];
+	doap:bug-database <https://github.com/bergos/ldapp/issues>;
+	doap:release [ a doap:Version;
+		doap:created "2014";
+		doap:revision "0.1.0";
+	].
+
+# LDP
+<#ldp> a doap:Project;
+	doap:name "LDP";
+	doap:homepage <http://ldapp.bergnet.org/>;
+	doap:created "2014";
+	doap:shortdesc "Node.js LDP implementation";
+	doap:description "Base of a Node.js based Linked Data Platform implementation.";
+	doap:maintainer <https://www.bergnet.org/people/bergi/card#me>;
+	doap:license <http://usefulinc.com/doap/licenses/mit>;
+	doap:repository [ a doap:GitRepository;
+		doap:location <https://github.com/bergos/ldp.git>;
+		doap:browse <https://github.com/bergos/ldp>;
+	];
+	doap:bug-database <https://github.com/bergos/ldp/issues>;
+	doap:release [ a doap:Version;
+		doap:created "2014";
+		doap:revision "0.1.0";
+	].
+
+# Pubkey-Login
+<#pubkey-login> a doap:Project;
+	doap:name "Pubkey-Login";
+	doap:homepage <http://ldapp.bergnet.org/>;
+	doap:created "2014";
+	doap:shortdesc "Public Key Login middleware for Express/Connect";
+	doap:description "";
+	doap:maintainer <https://www.bergnet.org/people/bergi/card#me>;
+	doap:license <http://usefulinc.com/doap/licenses/mit>;
+	doap:repository [ a doap:GitRepository;
+		doap:location <https://github.com/bergos/pubkey-login.git>;
+		doap:browse <https://github.com/bergos/pubkey-login>;
+	];
+	doap:bug-database <https://github.com/bergos/pubkey-login/issues>;
+	doap:release [ a doap:Version;
+		doap:created "2014";
+		doap:revision "0.1.0";
+	].
+
+# RDF-Ext
+<#rdf-ext> a doap:Project;
+	doap:name "RDF-Ext";
+	doap:homepage <http://ldapp.bergnet.org/>;
+	doap:created "2014";
+	doap:shortdesc "RDF Interfaces API extension";
+	doap:description "Implements the RDF-Ext spec plus parsers (JSON-LD, RDF/XML, Turtle), serializers (JSON-LD, N-Triples) and stores (in memory, LDP, SPARQL).";
+	doap:maintainer <https://www.bergnet.org/people/bergi/card#me>;
+	doap:license <http://usefulinc.com/doap/licenses/mit>;
+	doap:repository [ a doap:GitRepository;
+		doap:location <https://github.com/bergos/rdf-ext.git>;
+		doap:browse <https://github.com/bergos/rdf-ext>;
+	];
+	doap:bug-database <https://github.com/bergos/rdf-ext/issues>;
+	doap:release [ a doap:Version;
+		doap:created "2014";
+		doap:revision "0.1.0";
+	].
+
+# RDF-JSONify
+<#rdf-jsonify> a doap:Project;
+	doap:name "RDF-JSONify";
+	doap:homepage <http://ldapp.bergnet.org/>;
+	doap:created "2014";
+	doap:shortdesc "RESTful interface for RDF-Ext Stores";
+	doap:description "RDF-JSONify provides a RESTful interface to a RDF-Ext Store interface using JSON-LD objects. HTTP methods are mapped to JavaScript methods. JSON-LD is used to translate JSON objects to and from RDF-Interfaces objects. The JSON-LD context can be passed as argument to the methods or by IRI based routing.";
+	doap:maintainer <https://www.bergnet.org/people/bergi/card#me>;
+	doap:license <http://usefulinc.com/doap/licenses/mit>;
+	doap:repository [ a doap:GitRepository;
+		doap:location <https://github.com/bergos/rdf-jsonify.git>;
+		doap:browse <https://github.com/bergos/rdf-jsonify>;
+	];
+	doap:bug-database <https://github.com/bergos/rdf-jsonify/issues>;
+	doap:release [ a doap:Version;
+		doap:created "2014";
+		doap:revision "0.1.0";
+	].
+
+# RDF Test Utils
+<#rdf-test-utils> a doap:Project;
+	doap:name "RDF-Test-Utils";
+	doap:homepage <http://ldapp.bergnet.org/>;
+	doap:created "2014";
+	doap:shortdesc "Test utils for RDF Interfaces objects";
+	doap:description "";
+	doap:maintainer <https://www.bergnet.org/people/bergi/card#me>;
+	doap:license <http://usefulinc.com/doap/licenses/mit>;
+	doap:repository [ a doap:GitRepository;
+		doap:location <https://github.com/bergos/rdf-test-utils.git>;
+		doap:browse <https://github.com/bergos/rdf-test-utils>;
+	];
+	doap:bug-database <https://github.com/bergos/rdf-text-utils/issues>;
+	doap:release [ a doap:Version;
+		doap:created "2014";
+		doap:revision "0.1.0";
+	].
+
+# UAC
+<#uac> a doap:Project;
+	doap:name "UAC";
+	doap:homepage <http://ldapp.bergnet.org/>;
+	doap:created "2014";
+	doap:shortdesc "Node.js Universal Access Control implementation";
+	doap:description "";
+	doap:maintainer <https://www.bergnet.org/people/bergi/card#me>;
+	doap:license <http://usefulinc.com/doap/licenses/mit>;
+	doap:repository [ a doap:GitRepository;
+		doap:location <https://github.com/bergos/uac.git>;
+		doap:browse <https://github.com/bergos/uac>;
+	];
+	doap:bug-database <https://github.com/bergos/uac/issues>;
+	doap:release [ a doap:Version;
+		doap:created "2014";
+		doap:revision "0.1.0";
+	].

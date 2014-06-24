@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+  <title>LDApp</title>
+
+  <link href='//fonts.googleapis.com/css?family=Patua+One|Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/ldapp.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <script src="js/rdf.js"></script>
+  <script src="js/jsonld.js"></script>
+  <script src="js/n3-browser.js"></script>
+  <script src="js/rdf-ext.js"></script>
+  <script src="js/rdf-jsonify.js"></script>
+ </head>
+
+ <body>
+  <div id="main" class="container">
+
+   <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+     <div class="navbar-header">
+      <a class="navbar-brand" href="#">LDApp</a>
+     </div>
+     <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+       <li><a href="#download">Download</a></li>
+       <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Libraries <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+	     <li><a href="#ldp">LDP</a></li>
+	     <li><a href="#pubkey-login">Pubkey-Login</a></li>
+         <li><a href="#rdf-ext">RDF-Ext</a></li>
+         <li><a href="#rdf-jsonify">RDF-JSONify</a></li>
+	     <li><a href="#rdf-test-utils">RDF-Test-Utils</a></li>
+         <li><a href="#uac">UAC</a></li>
+         <li class="divider"></li>
+         <li class="dropdown-header">External</li>
+         <li><a href="http://www.w3.org/TR/rdf-interfaces/">RDF-Interfaces</a></li>
+         <li><a href="http://www.uduvudu.org/">Uduvudu</a></li>
+         <li><a href="http://expressjs.com/">Express</a></li>
+        </ul>
+       </li>
+      </ul>
+     </div>
+    </div>
+   </div>
+
+   <div class="jumbotron">
+    <h1 class="cover-heading">LDApp - Linked Data Stack</h1>
+
+    <!-- div class="row">
+     <div class="col-md-4"></div>
+     <div class="col-md-4">
+      <h2>Choose your flavor</h2>
+     </div>
+     <div class="col-md-4"></div>
+    </div>
+
+    <div class="row">
+     <div class="col-md-4">
+      <a href="#ldapp-basic">
+       <img src="img/ldapp-logo.png" class="img-responsive" />
+       <p>Basic</p>
+      </a>
+     </div>
+     <div class="col-md-4"></div>
+     <div class="col-md-4">
+      <a href="#ldapp-uduvudu">
+       <img src="img/ldapp-logo.png" class="img-responsive" />
+       <p>Uduvudu</p>
+      </a>
+     </div>
+    </div -->
+   </div>
+
+   <div id="download" class="page-header">
+    <h2>Download</h2>
+   </div>
+   <!-- p>LDApp comes in different flavors, precustomized for your needs.</p -->
+   <div id="flavors-list"></div>
+
+   <div id="libraries" class="page-header">
+    <h2>Libraries</h2>
+   </div>
+   <p>LDApp has a modular architecture. Many modules can be used outside of LDApp.</p>
+   <div id="libraries-list"></div>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/react.js"></script>
+  <script src="js/project.js"></script>
+  <script>
+	var flavors = new React.DOM.div(
+		null,
+		new Project('projects.ttl#ldapp')
+	);
+
+	React.renderComponent(flavors, document.getElementById('flavors-list'));
+
+	var libraries = new React.DOM.div(
+		null,
+		new Project('projects.ttl#ldp'),
+		new Project('projects.ttl#pubkey-login'),
+		new Project('projects.ttl#rdf-ext'),
+		new Project('projects.ttl#rdf-jsonify'),
+		new Project('projects.ttl#rdf-test-utils'),
+		new Project('projects.ttl#uac')
+	);
+
+	React.renderComponent(libraries, document.getElementById('libraries-list'));
+  </script>
+ </body>
+</html>
