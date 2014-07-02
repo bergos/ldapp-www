@@ -50,7 +50,7 @@ Project.render = {
       text = this.state.shortdesc;
     }
 
-    return new React.DOM.div({ className: 'col-md-5' }, new React.DOM.p(null, text));
+    return new React.DOM.div({ className: 'col-md-5' }, new React.DOM.p({ className: 'text-justify' }, text));
   },
   software: function () {
     var components = [];
