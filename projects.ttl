@@ -46,7 +46,7 @@
 	doap:homepage <http://ldapp.bergnet.org/>;
 	doap:created "2014";
 	doap:shortdesc "Public Key Login middleware for Express/Connect";
-	doap:description "";
+	doap:description "Pubkey-Login is a middleware for Express/Connect for public key authentications. At the moment it implements only WebID. Beside the authentication there is a middleware function to fetch Mozilla Persona compatible authentication assertions.";
 	doap:maintainer <https://www.bergnet.org/people/bergi/card#me>;
 	doap:license <http://usefulinc.com/doap/licenses/mit>;
 	doap:repository [ a doap:GitRepository;
@@ -64,8 +64,8 @@
 	doap:name "RDF-Ext";
 	doap:homepage <http://ldapp.bergnet.org/>;
 	doap:created "2014";
-	doap:shortdesc "RDF Interfaces API extension";
-	doap:description "Implements the RDF-Ext spec plus parsers (JSON-LD, RDF/XML, Turtle), serializers (JSON-LD, N-Triples) and stores (in memory, LDP, SPARQL).";
+	doap:shortdesc "Implements the RDF-Ext specification, parsers (JSON-LD, RDF/XML, Turtle), serializers (JSON-LD, N-Triples) and stores (in memory, LDP, SPARQL)";
+	doap:description "RDF-Ext implements the RDF-Ext specification which defines additional interfaces to the RDF-Interfaces specification. The Store interface provides read/write access to named graphs. RDF-Ext implements stores for LDP (and any other RESTful graph data), SPARQL and in memory. The RDF-Ext specification also defines extended interfaces for asynchronous parsers and serializers. RDF-Ext contains a JSON-LD parser which supports only the asynchronous interface. The Turtle (based on N3.js) and RDF/XML (based on RDFLib.js) parser can be used with the RDF-Interfaces and RDF-Ext interface. Also the serializers (N-Triples and JSON-LD) support both interfaces. To handle asynchronous calls easier, RDF-Ext specifies Promise wrappers around the Store, Parser and Serializer interfaces. RDF-Ext provides implementations of all wrappers.";
 	doap:maintainer <https://www.bergnet.org/people/bergi/card#me>;
 	doap:license <http://usefulinc.com/doap/licenses/mit>;
 	doap:repository [ a doap:GitRepository;
